@@ -6,10 +6,11 @@ def roll_call_dwarves(dwarves)
   end 
 end
 
-def summon_captain_planet(fruits)
+def summon_captain_planet(veggies)
   i = 0 
-  while i < fruits.length 
-    yield(fruits[i])
+  veggie_array = []
+  while i < veggies.length 
+    veggie_array << yield(veggies[i])
     i +=1 
   end 
 end
