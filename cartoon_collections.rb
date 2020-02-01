@@ -10,12 +10,10 @@ def summon_captain_planet(veggies)
   i = 0 
   veggie_array = []
   while i < veggies.length 
-    veggie_array << yield(veggies[i])
+    veggie_array << veggies[i].capitalize + "!"
     i +=1 
   end 
 end
-
-summon_captain_planet[carrot cucumber pepper] {[i]}
 
 def long_planeteer_calls# code an argument here
   # Your code here
