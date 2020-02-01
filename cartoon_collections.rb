@@ -15,7 +15,7 @@ def summon_captain_planet(veggies)
   end 
 end
 
-summon_captain_planet[]
+summon_captain_planet[carrot cucumber pepper]
 
 def long_planeteer_calls# code an argument here
   # Your code here
