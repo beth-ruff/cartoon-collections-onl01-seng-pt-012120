@@ -7,7 +7,11 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(fruits)
-  
+  i = 0 
+  while i < fruits.length 
+    yield(fruits[i])
+    i +=1 
+  end 
 end
 
 def long_planeteer_calls# code an argument here
