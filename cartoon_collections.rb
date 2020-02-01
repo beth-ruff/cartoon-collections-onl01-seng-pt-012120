@@ -20,8 +20,12 @@ def long_planeteer_calls(calls_long)
   i = 0
   new_array = []
   while i < calls_long.length 
-    new_array << 
+    yield[i]
+    i += 1
+  end
 end
+
+calls_long.any? {|i| i.character < 4}
 
 def find_the_cheese# code an argument here
   # the array below is here to help
