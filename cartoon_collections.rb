@@ -25,7 +25,7 @@ def long_planeteer_calls(calls_long)
   end
 end
 
-["axe", "earth", "wind", "fire"].any? {|i| i.character < 4}
+["axe", "earth", "wind", "fire"].any? {|i| i.length < 4}
 
 def find_the_cheese# code an argument here
   # the array below is here to help
