@@ -18,14 +18,13 @@ end
 
 def long_planeteer_calls(calls_long)
   i = 0
-  new_array = []
-  while i < calls_long.length 
-    yield[i]
-    i += 1
+    if calls_long.any? {|i| i.length > 4}
+      true 
+    else 
+      false 
+    i += 1 
   end
 end
-
-["axe", "earth", "wind", "fire"].any? {|i| i.length < 4}
 
 def find_the_cheese# code an argument here
   # the array below is here to help
